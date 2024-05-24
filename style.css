@@ -1,5 +1,6 @@
 body {
   font-family: "Arial", sans-serif;
+  background-color: rgb(202, 207, 194);
 }
 
 .game--title {
@@ -46,4 +47,28 @@ section {
 
 .game--restart:hover {
   background-color: rgb(159, 170, 144);
+}
+
+@media screen and (max-width: 766px) {
+  .game--title {
+    font-size: 4rem;
+  }
+  .game--container {
+    width: 300px;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 0.6px solid #333333;
+    box-shadow: 0 0 0 0.6px #333333;
+    line-height: 70px;
+    font-size: 5rem;
+  }
+  .game--restart {
+    width: 200px;
+    border-radius: 7px;
+  }
+  .game--status {
+    font-size: 1.5rem;
+  }
 }
